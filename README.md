@@ -1,4 +1,4 @@
-# SistemasOperacionais (3º Ano)
+# Sistemas Operacionais (3º Ano)
 
 ### 1º Bimestre:
 * Guiação de um FrontEnd em shell script para alguns comandos do linux
