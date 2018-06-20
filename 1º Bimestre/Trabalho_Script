@@ -1,0 +1,395 @@
+#!/bin/sh
+
+tryagain() {
+  clear
+	echo "Opção não reconhecida. Tente novamente."
+}
+
+continuar() {
+	echo
+	echo "Pressione qualquer tecla para continuar..."
+	read a
+  clear
+	echo
+}
+
+opc_man(){ #TRATAR ERRO
+	echo "Digite o comando que você deseja conhecer:"
+	read comando
+
+	man $comando 2>> log.txt
+
+	if [ "$?" -ne 0 ]; then
+		echo "O comando $comando não existe!"
+    opc_man
+	fi
+
+}
+
+opc_ls(){
+	echo "Deseja adicionar algum parâmetro? (Y/N)"
+	read resp
+
+	case "$resp" in
+		yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read paramls;
+                                                                                           clear;
+                                                                                           echo "Diretório: ";
+                                                                                           pwd ;
+                                                                                           echo "";
+                                                                                           ls "-""$paramls";;
+		no | n | N | No | NO | nO ) clear;
+                                echo "Diretório: ";
+                                pwd;
+                                echo "";
+                                ls;;
+		* ) tryagain; opc_ls;;
+	esac
+}
+
+opc_pwd(){
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read parampwd;
+                                                                                           clear;
+                                                                                           echo "Nome do diretório atual:";
+                                                                                           pwd "-""$parampwd";;
+    no | n | N | No | NO | nO ) clear;
+                                echo "Nome do diretório atual:";
+                                pwd;;
+    * ) tryagain; opc_pwd;;
+  esac
+}
+
+
+opc_mkdir(){ #TESTAR DUPLICAÇÃO DE ARQUIVO
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read parammkdir;
+    	                                                                                     echo "Insira o nome da nova pasta: ";
+                                                                                         	 read nomemkdir;
+                                                                                         	 mkdir $nomemkdir "-""$parammkdir";
+                                                                                         	 echo "Diretório criado.";;
+    no | n | N | No | NO | nO ) clear;
+    	                          echo "Insira o nome da nova pasta: ";
+                                read nomemkdir;
+                                mkdir $nomemkdir;
+                                echo "Diretório criado.";;
+    * ) tryagain; opc_mkdir;;
+  esac
+}
+
+
+opc_cd(){
+  echo
+  echo "Diretório atual: "
+  pwd
+  echo
+  echo "Arquivos e pastas do diretório: "
+  ls -CF
+
+  echo " "
+	echo "1 - Subir diretório"
+	echo "2 - Mudar diretório"
+  echo " "
+	echo -n "- Opção: "
+	read opccd
+
+	case $opccd in
+		"1" ) cd .. ;
+          clear;
+          echo "Diretório atual: ";
+          pwd;
+          echo;
+          echo "Arquivos e pastas do diretório: ";
+          ls -CF;;
+
+
+		"2" )	echo "Qual diretório desejas ir?";
+          read respdir;
+          cd $respdir;
+          echo "Diretório atual: ";
+          pwd;
+          echo
+          echo "Arquivos e pastas do diretório: ";
+          ls -CF;;
+
+		* ) tryagain opc_cd;;
+	esac
+}
+
+
+opc_cp(){
+
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read paramcp;
+                                                                                           echo "Insira o nome do arquivo original a ser copiado: ";
+  	                                                                                       read nmorig;
+  	                                                                                       echo "Insira o nome da cópia: ";
+  	                                                                                       read nmcp;
+                                                                                         	 cp "-""$paramcp" $nmorig $nmcp;
+                                                                                         	 echo "Cópia criada!";;
+    no | n | N | No | NO | nO ) clear;
+                                echo "Insira o nome do arquivo original a ser copiado: ";
+  	                            read nmorig;
+  	                            echo "Insira o nome da cópia: ";
+  	                            read nmcp;
+  	                            cp $nmorig $nmcp;
+                                echo "Cópia criada!";;
+    * ) tryagain; opc_cp;;
+  esac
+}
+
+opc_mv(){
+	echo "Você deseja mover ou renomear o arquivo?"
+	echo " "
+	echo "1 - Mover"
+	echo "2 - Renomear"
+  echo " "
+	echo -n "- Opção: "
+	read opcmv
+
+	case $opcmv in
+		"1" ) echo "Insira o nome do arquivo a ser movido: ";
+          read nmarqmv;
+          echo "Insira o caminho de destino. Atenção: se o diretório for um arquivo, este arquivo será sobreposto. ";
+          read nmdir;
+          mv $nmarqmv $nmdir;;
+
+
+		"2" ) echo "Insira o nome do arquivo a ser renomeado: ";
+          read vlnomemv;
+          echo "Insira o novo nome do arquivo: ";
+          read nvnomemv;
+          mv $vlnomemv $nvnomemv;;
+
+		* ) tryagain opc_mv;;
+	esac
+}
+
+
+opc_rm(){
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read paramrm;
+                                                                                           echo "Insira o nome do arquivo que você deseja apagar: ";
+                                                                                           read nomerm;
+                                                                                           rm $nomerm "-""$paramrm";;
+    no | n | N | No | NO | nO ) clear;
+                                echo "Insira o nome do arquivo que você deseja apagar: ";
+                              	read nomerm;
+                                rm $nomerm;;
+    * ) tryagain; opc_rm;;
+  esac
+}
+
+
+opc_rmdir(){
+
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read paramrmdir;
+                                                                                           echo "Insira o nome do diretório que você deseja apagar: ";
+                                                                                           read nomedirrm;
+                                                                                           rmdir $nomedirrm "-""$paramrmdir";;
+    no | n | N | No | NO | nO ) clear;
+                                echo "Insira o nome do diretório que você deseja apagar: ";
+                                read nomedirrm;
+                                rmdir $nomedirrm;;
+    * ) tryagain; opc_rmdir;;
+  esac
+
+}
+
+
+opc_more(){
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read parammore;
+                                                                                           echo "Insira o nome do arquivo que você deseja mostrar na tela: ";
+                                                                                           read nomemore;
+                                                                                           more "-""$parammore" $nomemore;;
+    no | n | N | No | NO | nO ) clear;
+                                echo "Insira o nome do arquivo que você deseja mostrar na tela: ";
+                              	read nomemore;
+                                more $nomemore;;
+    * ) tryagain; opc_more;;
+  esac
+}
+
+
+opc_cat(){
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read paramcat;
+                                                                                           echo "Insira o nome do arquivo que você deseja mostrar na tela: ";
+                                                                                           read nomecat;
+                                                                                           cat "-""$paramcat" $nomecat;;
+    no | n | N | No | NO | nO ) clear;
+                                echo "Insira o nome do arquivo que você deseja mostrar na tela: ";
+                              	read nomecat;
+                                cat $nomecat;;
+    * ) tryagain; opc_cat;;
+  esac
+}
+
+
+opc_tail(){
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read paramtail;
+                                                                                           echo "Insira o nome do arquivo que você deseja mostrar na tela: ";
+                                                                                           read nometail;
+                                                                                           tail "-""$paramtail" $nometail;;
+    no | n | N | No | NO | nO ) clear;
+                                echo "Insira o nome do arquivo que você deseja mostrar na tela: ";
+                              	read nometail;
+                                tail $nometail;;
+    * ) tryagain; opc_tail;;
+  esac
+}
+
+
+opc_echo(){
+
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read paramecho;
+                                                                                           echo "Que frase você quer repetir?";
+                                                                                           read frase;
+                                                                                           echo "";
+                                                                                           echo "-""$paramecho" $frase ;;
+    no | n | N | No | NO | nO ) clear;
+                                echo "Que frase você quer repetir?";
+                                read frase;
+                                echo "";
+                                echo $frase ;;
+    * ) tryagain; opc_echo;;
+  esac
+}
+
+
+opc_whoami(){
+	echo -n "Usuário: "
+  whoami
+}
+
+
+opc_ps(){
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read paramps;
+                                                                                           ps "-""$paramps";;
+    no | n | N | No | NO | nO ) clear;
+                                ps $nometail;;
+    * ) tryagain; opc_ps;;
+  esac
+}
+
+
+opc_grep(){
+
+	echo "Digite a string que você quer encontrar:"
+	read stringgrep
+
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read paramgrep;
+                                                                                           echo "Digite o nome do arquivo ou diretório em que você quer encontrar a string (Use '*' para procurar em todo o diretório atual): ";
+                                                                                           read fontegrep;
+                                                                                           clear;
+                                                                                           grep "-""$paramgrep" "$stringgrep" $fontegrep;;
+    no | n | N | No | NO | nO ) clear;
+                                echo "Digite o nome do arquivo ou diretório em que você quer encontrar a string (Use '*' para procurar em todo o diretório atual):";
+                                read fontegrep;
+                                clear;
+                                grep "$stringgrep" $fontegrep;;
+    * ) tryagain; opc_grep;;
+  esac
+
+}
+
+
+opc_wc(){
+  echo "Deseja adicionar algum parâmetro? (Y/N)"
+  read resp
+
+  case "$resp" in
+    yes | y | Y | Yes | YES | YEs | yES | yeS | yEs | YeS ) echo "Digite os parâmetros: "; read paramwc;
+                                                                                           echo "Insira o nome do arquivo que você deseja mostrar na tela: ";
+                                                                                           read nomewc;
+                                                                                           wc "-""$paramwc" $nomewc;;
+    no | n | N | No | NO | nO ) clear;
+                                echo "Insira o nome do arquivo que você deseja mostrar na tela: ";
+                              	read nomewc;
+                                wc $nomewc;;
+    * ) tryagain; opc_wc;;
+  esac
+}
+
+menu() {
+  clear
+	echo
+	echo ".=================================================================."
+	echo "|                                                                 |"
+	echo "|               TRABALHO DE SISTEMAS OPERACIONAIS                 |"
+	echo "|                 EDUARDO SOARES & MATHEUS GOMES                  |"
+	echo "|                                                                 |"
+	echo "|           Digite o número correspondente à sua opção:           |"
+	echo "|                                                                 |"
+	echo "|     1  - MAN       6  - CP        11 - CAT        16 - GREP     |"
+	echo "|     2  - LS        7  - MV        12 - TAIL       17 - WC       |"
+	echo "|     3  - PWD       8  - RM        13 - ECHO                     |"
+	echo "|     4  - MKDIR     9  - RMDIR     14 - WHOAMI                   |"
+	echo "|     5  - CD        10 - MORE      15 - PS         0 - EXIT      |"
+	echo "|                                                                 |"
+	echo "|=================================================================."
+	echo -n "- Opção: "
+  read opcao
+	case "$opcao" in
+		"0" ) exit 0;;
+		"1" ) opc_man; continuar; menu;;
+		"2" ) opc_ls; continuar; menu;;
+		"3" ) opc_pwd; continuar; menu;;
+		"4" ) opc_mkdir; continuar; menu;;
+		"5" ) opc_cd; continuar; menu;;
+		"6" ) opc_cp; continuar; menu;;
+		"7" ) opc_mv; continuar; menu;;
+		"8" ) opc_rm; continuar; menu;;
+		"9" ) opc_rmdir; continuar; menu;;
+		"10" ) opc_more; continuar; menu;;
+		"11" ) opc_cat; continuar; menu;;
+		"12" ) opc_tail; continuar; menu;;
+		"13" ) opc_echo; continuar; menu;;
+		"14" ) opc_whoami; continuar; menu;;
+		"15" ) opc_ps; continuar; menu;;
+		"16" ) opc_grep; continuar; menu;;
+		"17" ) opc_wc; continuar; menu;;
+
+		* ) tryagain; menu;;
+	esac
+}
+
+menu
