@@ -8,8 +8,13 @@
 -----
 
 ### 2º Bimestre:
-* Best Fit, First Fit, Worst Fit e Circular Fit
-
+* Desenvolver uma aplicação que simule os métodos básicos de alocação de processos em lacunas de memória com particionamento dinâmico.
+* Best Fit, First Fit, Worst Fit e Circular Fit  
+  * Opção 1 - Inserir Processo em memória
+  * Opção 2 - Remover processo em memória
+  * Opção 3 - Listar estado das memórias
+  * Opção 4 - Finalizar aplicação
+  
 -----
 
 ### 3º Bimestre:
