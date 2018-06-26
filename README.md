@@ -14,8 +14,7 @@
   * Opção 2 - Remover processo em memória
   * Opção 3 - Listar estado das memórias
   * Opção 4 - Finalizar aplicação
-
-
+  
 -----
 
 ### 3º Bimestre:
