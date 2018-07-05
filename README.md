@@ -9,11 +9,11 @@
 
 ### 2º Bimestre:
 1) Desenvolver uma aplicação que simule os métodos básicos de alocação de processos em lacunas de memória com particionamento dinâmico.
-  * Best Fit, First Fit, Worst Fit e Circular Fit  
-  * Opção 1 - Inserir Processo em memória
-  * Opção 2 - Remover processo em memória
-  * Opção 3 - Listar estado das memórias
-  * Opção 4 - Finalizar aplicação
+   * Best Fit, First Fit, Worst Fit e Circular Fit  
+   * Opção 1 - Inserir Processo em memória
+   * Opção 2 - Remover processo em memória
+   * Opção 3 - Listar estado das memórias
+   * Opção 4 - Finalizar aplicação
 2) Desenvolver uma estrutura de dados que represente um sistema de paginação de memória
   - 512 páginas de 8KB e 256 frames;
   - uma tabela de páginas será criada, associando (aleatoriamente) 256 páginas às 256 molduras disponíveis;
