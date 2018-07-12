@@ -3,7 +3,7 @@
 ### [1º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/1%C2%BA%20Bimestre)
 1) Guiação de um FrontEnd em shell script para alguns comandos do linux
 2) Criação de Forks e cálculo de tempo de processos
-   * (CÁLCULO DE APROXIMAÇÃO DA RAIZ DE 2 E DE TEMPO DE CHAVEAMENTO DE PROCESSOS)
+   * [(CÁLCULO DE APROXIMAÇÃO DA RAIZ DE 2 E DE TEMPO DE CHAVEAMENTO DE PROCESSOS)](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/1%C2%BA%20Bimestre/Trabalho%20SO%20-%201%C2%BA%20Bimestre.pdf)
 
 -----
 
