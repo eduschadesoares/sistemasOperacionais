@@ -1,13 +1,13 @@
 # Sistemas Operacionais (3º Ano)
 
-### [1º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/1%C2%BA%20Bimestre):
+### [1º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/1%C2%BA%20Bimestre)
 1) Guiação de um FrontEnd em shell script para alguns comandos do linux
 2) Criação de Forks e cálculo de tempo de processos
    * (CÁLCULO DE APROXIMAÇÃO DA RAIZ DE 2 E DE TEMPO DE CHAVEAMENTO DE PROCESSOS)
 
 -----
 
-### 2º Bimestre:
+### [2º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/2%C2%BA%20Bimestre)
 1) Desenvolver uma aplicação que simule os métodos básicos de alocação de processos em lacunas de memória com particionamento dinâmico.
    * Best Fit, First Fit, Worst Fit e Circular Fit  
    * Opção 1 - Inserir Processo em memória
