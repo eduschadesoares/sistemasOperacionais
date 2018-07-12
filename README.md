@@ -8,7 +8,7 @@
 -----
 
 ### [2º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/2%C2%BA%20Bimestre)
-1) Desenvolver uma aplicação que simule os métodos básicos de alocação de processos em lacunas de memória com particionamento dinâmico.
+1) Desenvolver uma aplicação que simule os métodos básicos de [alocação de processos](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/2%C2%BA%20Bimestre/Dynamic%20process%20allocator%20simulator) em lacunas de memória com particionamento dinâmico.
    * Best Fit, First Fit, Worst Fit e Circular Fit  
    * Opção 1 - Inserir Processo em memória
    * Opção 2 - Remover processo em memória
