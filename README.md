@@ -14,7 +14,7 @@
    * Opção 2 - Remover processo em memória
    * Opção 3 - Listar estado das memórias
    * Opção 4 - Finalizar aplicação
-2) Desenvolver uma estrutura de dados que represente um sistema de paginação de memória
+2) Desenvolver uma estrutura de dados que represente um sistema de [paginação de memória](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/2%C2%BA%20Bimestre/Pagina%C3%A7%C3%A3o)
    - 512 páginas de 8KB e 256 frames;
    - uma tabela de páginas será criada, associando (aleatoriamente) 256 páginas às 256 molduras disponíveis;
    - representação de endereços virtuais e reais na notação binária, separados na forma de tuplas número da página/descolamento e número da moldura/deslocamento, respectivamente 9+13 bits e 8+13 bits;
