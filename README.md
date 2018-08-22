@@ -1,10 +1,10 @@
 # Sistemas Operacionais (3º Ano)
 
 ### [1º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/1%C2%BA%20Bimestre)
-1) Guiação de um [FrontEnd em shell script](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/1%C2%BA%20Bimestre/Trabalho_Script) para alguns comandos do linux
+1) Guiação de um [FrontEnd em shell script](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/1%C2%BA%20Bimestre/Trabalho%20Script/Trabalho_Script) para alguns comandos do linux
 
-2) Criação de [Forks](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/1%C2%BA%20Bimestre/Trabalho_Fork.cpp) e cálculo de tempo de processos
-   * [(CÁLCULO DE APROXIMAÇÃO DA RAIZ DE 2 E DE TEMPO DE CHAVEAMENTO DE PROCESSOS)](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/1%C2%BA%20Bimestre/Trabalho%20SO%20-%201%C2%BA%20Bimestre.pdf)
+2) Criação de [Forks](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/1%C2%BA%20Bimestre/Trabalho%20Fork/Trabalho_Fork.cpp) e cálculo de tempo de processos
+   * [(CÁLCULO DE APROXIMAÇÃO DA RAIZ DE 2 E DE TEMPO DE CHAVEAMENTO DE PROCESSOS)](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/1%C2%BA%20Bimestre/Trabalho%20Fork/Trabalho%20SO%20-%201%C2%BA%20Bimestre.pdf)
 
 -----
 
@@ -33,8 +33,9 @@ Após:
   
 -----
 
-### 3º Bimestre:
-1)
+### [3º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/2%C2%BA%20Bimestre)
+1) Avaliação de tempo em [sistemas de arquivos]()
+
 -----
 
 ### 4º Bimestre:
