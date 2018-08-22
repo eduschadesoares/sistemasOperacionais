@@ -33,8 +33,9 @@ Após:
   
 -----
 
-### 3º Bimestre:
-1)
+### [3º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/2%C2%BA%20Bimestre)
+1) Avaliação de tempo em [sistemas de arquivos]()
+
 -----
 
 ### 4º Bimestre:
