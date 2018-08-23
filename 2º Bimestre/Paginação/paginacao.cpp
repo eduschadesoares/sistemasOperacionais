@@ -83,6 +83,7 @@ void randomizaPaginas(){
 	/*for(int i = 0; i < p; i++) {
 		cout << pag[i] << " ";
 	}*/
+	
 }
 
 void init(){
