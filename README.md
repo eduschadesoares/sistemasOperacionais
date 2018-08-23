@@ -34,7 +34,7 @@ Após:
 -----
 
 ### [3º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/3%C2%BA%20Bimestre)
-1) Avaliação de tempo em [sistemas de arquivos]()
+1) [Avaliação](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/3%C2%BA%20Bimestre/Cria%C3%A7%C3%A3o%20e%20C%C3%B3pias%20de%20Arquivos/Trabalho%20SO%20-%203%C2%BA%20Bimestre%20-%20Arquivos.pdf) de tempo em [sistemas de arquivos](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/3%C2%BA%20Bimestre/Cria%C3%A7%C3%A3o%20e%20C%C3%B3pias%20de%20Arquivos/copiar.cpp)
 
 -----
 
