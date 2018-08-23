@@ -41,6 +41,8 @@ Após:
    - Criar um arquivo **"file.in"** por *função* e *syscall* de tamanho *1B*, *1KB*, *1MB* e *1GB*
    - Tirar a média do tempo decorrido na criação dos arquivos
    - Copiar cada um dos 4 arquivos **file.in** poŕ *função* e *syscall* para o arquivo **"file.out"**
+   - Tirar a média do tempo decorrido na cópia dos arquivos
+   
 -----
 
 ### 4º Bimestre:
