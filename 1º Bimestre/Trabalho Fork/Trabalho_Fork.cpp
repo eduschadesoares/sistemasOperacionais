@@ -95,7 +95,6 @@ int main(){
 
   fclose(arq);
 
-
   printf( "║\n");
 
 //Criação dos Forks
