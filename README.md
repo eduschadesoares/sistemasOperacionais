@@ -47,7 +47,9 @@ Após:
 2) [Filtro](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/3%C2%BA%20Bimestre/Tipos%20de%20Arquivos%20Linux/FilesType.cpp) de [arquivos de acordo com o seu tipo](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/3%C2%BA%20Bimestre/Tipos%20de%20Arquivos%20Linux) (Linux)
 
     - Criar um filtro para mostrar os tipos de arquivos desejados em dado diretório.
-    - Utilização do [cabeçalho](https://www.gnu.org/software/libc/manual/html_node/Directory-Entries.html) ```<dirent.h>```  
+    - Utilização do [cabeçalho](https://www.gnu.org/software/libc/manual/html_node/Directory-Entries.html) ```<dirent.h>``` 
+    
+    **TIPOS DE ARQUIVOS
 -----
 
 ### 4º Bimestre:
