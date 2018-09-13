@@ -51,12 +51,10 @@ Após:
     
     [**TIPOS DE ARQUIVOS**](https://www.systutorials.com/docs/linux/man/2-getdents/)
     
-
-    -------|-----------------------------    
-    DT_BLK | This is a block device.
-    -------|-----------------------------
-    DT_CHR | This is a character device.
-    -------|-----------------------------
+    | TYPE  | 
+    | :---: | :---:    
+    |DT_BLK | This is a block device. |
+    |DT_CHR | This is a character device.|
     
     
 -----
