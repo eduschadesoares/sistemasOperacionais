@@ -49,18 +49,18 @@ Após:
     - Criar um filtro para mostrar os tipos de arquivos desejados em dado diretório.
     - Utilização do [cabeçalho](https://www.gnu.org/software/libc/manual/html_node/Directory-Entries.html) ```<dirent.h>``` 
     
-    [**TIPOS DE ARQUIVOS**](https://www.systutorials.com/docs/linux/man/2-getdents/)
+      [**TIPOS DE ARQUIVOS**](https://www.systutorials.com/docs/linux/man/2-getdents/)
     
-    | VALUES  | TYPE |
-    | :---: | :---: | 
-    | DT_BLK | This is a block device. |
-    | DT_CHR | This is a character device. |
-    | DT_DIR | This is a directory. |
-    | DT_FIFO | This is a named pipe (FIFO). |
-    | DT_LNK | This is a symbolic link. |
-    | DT_REG | This is a regular file. |
-    | DT_SOCK | This is a UNIX domain socket. |
-    | DT_UNKNOWN | The file type is unknown. |
+      | VALUES  | TYPE |
+      | :---: | :---: | 
+      | DT_BLK | This is a block device. |
+      | DT_CHR | This is a character device. |
+      | DT_DIR | This is a directory. |
+      | DT_FIFO | This is a named pipe (FIFO). |
+      | DT_LNK | This is a symbolic link. |
+      | DT_REG | This is a regular file. |
+      | DT_SOCK | This is a UNIX domain socket. |
+      | DT_UNKNOWN | The file type is unknown. |
     
 -----
 
