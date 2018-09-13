@@ -50,6 +50,13 @@ Após:
     - Utilização do [cabeçalho](https://www.gnu.org/software/libc/manual/html_node/Directory-Entries.html) ```<dirent.h>``` 
     
     **TIPOS DE ARQUIVOS**
+    
+    DT_BLK | This is a block device.
+    -------|-----------------------------
+    DT_CHR | This is a character device.
+    -------|-----------------------------
+    
+    
 -----
 
 ### 4º Bimestre:
