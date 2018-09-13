@@ -49,7 +49,7 @@ Após:
     - Criar um filtro para mostrar os tipos de arquivos desejados em dado diretório.
     - Utilização do [cabeçalho](https://www.gnu.org/software/libc/manual/html_node/Directory-Entries.html) ```<dirent.h>``` 
     
-    **TIPOS DE ARQUIVOS
+    **TIPOS DE ARQUIVOS**
 -----
 
 ### 4º Bimestre:
