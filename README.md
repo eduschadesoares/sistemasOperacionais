@@ -11,7 +11,7 @@
 - [x] [3º Bimestre](#3º-bimestre) (Arquivos)
 - [ ] [4º Bimestre](#4º-bimestre) (I/O)
  
- # 
+# 
 
 ### [1º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/1%C2%BA%20Bimestre)
 1) Guiação de um [FrontEnd em shell script](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/1%C2%BA%20Bimestre/Trabalho%20Script/Trabalho_Script) para alguns comandos do linux
@@ -19,7 +19,7 @@
 2) Criação de [Forks](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/1%C2%BA%20Bimestre/Trabalho%20Fork/Trabalho_Fork.cpp) e cálculo de tempo de chaveamento de processos
    * [(CÁLCULO DE APROXIMAÇÃO DA RAIZ DE 2 E DE TEMPO DE CHAVEAMENTO DE PROCESSOS)](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/1%C2%BA%20Bimestre/Trabalho%20Fork/Trabalho%20SO%20-%201%C2%BA%20Bimestre%20-%20Processos.pdf)
 
------
+# 
 
 ### [2º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/2%C2%BA%20Bimestre)
 1) Desenvolver uma aplicação que simule os métodos básicos de [alocação de processos](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/2%C2%BA%20Bimestre/Dynamic%20process%20allocator%20simulator) em lacunas de memória com particionamento dinâmico
@@ -44,7 +44,7 @@ Após:
    - como saída, fornecerá a localização na tabela de páginas na forma nr. da página/deslocamento em decimal e binário e o respectivo endereço físico (ER) na forma nr.da moldura/deslocamento em decimal e binário, quando houver. Caso contrário, informar que houve PF.
    - sumarizar a taxa de acertos (hit ratio) e a taxa de page faults (miss ratio).
   
------
+# 
 
 ### [3º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/3%C2%BA%20Bimestre)
 1) [Avaliação](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/3%C2%BA%20Bimestre/Cria%C3%A7%C3%A3o%20e%20C%C3%B3pias%20de%20Arquivos/Trabalho%20SO%20-%203%C2%BA%20Bimestre%20-%20Arquivos.pdf) de tempo em [sistemas de arquivos](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/3%C2%BA%20Bimestre/Cria%C3%A7%C3%A3o%20e%20C%C3%B3pias%20de%20Arquivos/copiar.cpp)
@@ -78,7 +78,7 @@ Após:
       | DT_SOCK | This is a UNIX domain socket. |
       | DT_UNKNOWN | The file type is unknown. |
     
------
+# 
 
 ### 4º Bimestre:
 
