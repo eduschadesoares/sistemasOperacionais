@@ -2,7 +2,7 @@
 
 # Sistemas Operacionais (3º Ano)
 
-[![Python Repo](https://img.shields.io/badge/python%20repo-up%20to%20date-brightgreen.svg)](https://github.com/eduschadesoares/pythonCodes)
+[![Python Repo](https://img.shields.io/badge/python%20repo-up%20to%20date-brightgreen.svg)](https://github.com/eduschadesoares/pythonCodes) [![C++ Repo](https://img.shields.io/badge/c%2B%2B%20repo-up%20to%20date-blue.svg)](https://github.com/eduschadesoares/cCodes)
 
 
 
