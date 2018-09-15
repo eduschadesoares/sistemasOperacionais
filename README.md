@@ -1,9 +1,9 @@
 # Sistemas Operacionais (3º Ano)
 
 - [x] [1º Bimestre](#1º-bimestre) (Processos)
-- [x] [2º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/2%C2%BA%20Bimestre) (Memórias)
-- [x] [3º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/3%C2%BA%20Bimestre) (Arquivos)
-- [ ] [4º Bimestre]() (I/O)
+- [x] [2º Bimestre](#2º-bimestre) (Memórias)
+- [x] [3º Bimestre](#3º-bimestre) (Arquivos)
+- [ ] [4º Bimestre](#4º-bimestre) (I/O)
 
 -----
 
