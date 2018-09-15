@@ -4,6 +4,9 @@
 
 [![Python Repo](https://img.shields.io/badge/python%20repo-up%20to%20date-green.svg)](https://github.com/eduschadesoares/pythonCodes)
 
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
+
 # 
 
 #### Conteúdo 
