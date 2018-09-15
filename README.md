@@ -2,7 +2,7 @@
 
 # Sistemas Operacionais (3º Ano)
 
-[![Python Repo](https://img.shields.io/badge/python%20repo-up%20to%20date-green.svg)]
+[![Python Repo](https://img.shields.io/badge/python%20repo-up%20to%20date-green.svg)](#1º-bimestre)
 
 # 
 
