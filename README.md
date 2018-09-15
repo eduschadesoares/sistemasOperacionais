@@ -4,6 +4,10 @@
 
 [![Python Repo](https://img.shields.io/badge/python%20repo-up%20to%20date-green.svg)](https://github.com/eduschadesoares/pythonCodes)
 
+
+[![Python Repo](https://img.shields.io/hackage-deps/v/lens.svg)](https://github.com/eduschadesoares/pythonCodes)
+
+
 # 
 
 #### Conteúdo 
