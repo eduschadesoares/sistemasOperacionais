@@ -2,8 +2,7 @@
 
 # Sistemas Operacionais (3º Ano)
 
-# [![Python Repo](https://img.shields.io/badge/python%20repo-up%20to%20date-brightgreen.svg)](https://github.com/eduschadesoares/pythonCodes) [![C++ Repo](https://img.shields.io/badge/c++%20repo-up%20to%20date-blue.svg)](https://github.com/eduschadesoares/cCodes) 
-[![Read the Docs](https://img.shields.io/badge/docs-check%20out-red.svg)](http://deinfo.uepg.br/~arion/MaterialDeApoio.html)
+# [![Python Repo](https://img.shields.io/badge/python%20repo-up%20to%20date-brightgreen.svg)](https://github.com/eduschadesoares/pythonCodes) [![C++ Repo](https://img.shields.io/badge/c++%20repo-up%20to%20date-blue.svg)](https://github.com/eduschadesoares/cCodes) [![Read the Docs](https://img.shields.io/badge/docs-check%20out-red.svg)](http://deinfo.uepg.br/~arion/MaterialDeApoio.html)
 
 
 #### Conteúdo 
