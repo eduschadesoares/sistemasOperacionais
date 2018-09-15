@@ -14,6 +14,7 @@ int numForks;
 void menu() {
   int opcao;
 
+	
   printf( "╔═════════════════════════════╗\n");
   printf( "╠ 1 - Execução de Referência  ║\n");
   printf( "╠ 2 - Criar forks             ║\n");
