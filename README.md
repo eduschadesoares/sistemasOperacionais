@@ -44,6 +44,8 @@ Após:
    - Tirar a média do tempo decorrido na cópia dos arquivos
    - [(AVALIAÇÃO DE TEMPO DE CRIAÇÃO E CÓPIA DE ARQUIVOS)](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/3%C2%BA%20Bimestre/Cria%C3%A7%C3%A3o%20e%20C%C3%B3pias%20de%20Arquivos/Trabalho%20SO%20-%203%C2%BA%20Bimestre%20-%20Arquivos.pdf)
    
+   -----
+   
 2) [Filtro](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/3%C2%BA%20Bimestre/Tipos%20de%20Arquivos%20Linux/FilesType.cpp) de [arquivos de acordo com o seu tipo](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/3%C2%BA%20Bimestre/Tipos%20de%20Arquivos%20Linux) (Linux)
 
     - Criar um filtro para mostrar os tipos de arquivos desejados em dado diretório.
