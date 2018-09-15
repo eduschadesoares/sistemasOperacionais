@@ -7,8 +7,6 @@
 - [x] [2º Bimestre](#2º-bimestre) (Memórias)
 - [x] [3º Bimestre](#3º-bimestre) (Arquivos)
 - [ ] [4º Bimestre](#4º-bimestre) (I/O)
-
-[![python](https://github.com/eduschadesoares)]
  
 -----
 
