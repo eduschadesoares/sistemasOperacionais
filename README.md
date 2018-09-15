@@ -1,6 +1,6 @@
 # Sistemas Operacionais (3º Ano)
 
-![tux](https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Tux" style="float: left; margin-right: 10px;" />
 
 - [x] [1º Bimestre](#1º-bimestre) (Processos)
 - [x] [2º Bimestre](#2º-bimestre) (Memórias)
