@@ -6,8 +6,7 @@
 
 
 #### Conteúdo 
-- [x] [1º Bimestre](#1º-bimestre) (Processos)
-- [x] [2º Bimestre](#2º-bimestre) (Memórias)
+- [x] [1º Bimestre](#1º-bimestre) (Processos) [x] [2º Bimestre](#2º-bimestre) (Memórias)
 - [x] [3º Bimestre](#3º-bimestre) (Arquivos)
 - [ ] [4º Bimestre](#4º-bimestre) (I/O)
  
