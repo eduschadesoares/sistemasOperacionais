@@ -2,6 +2,10 @@
 
 # Sistemas Operacionais (3º Ano)
 
+[![Python Repo](https://img.shields.io/badge/python%20repo-up%20to%20date-green.svg)]
+
+# 
+
 #### Conteúdo 
 - [x] [1º Bimestre](#1º-bimestre) (Processos)
 - [x] [2º Bimestre](#2º-bimestre) (Memórias)
