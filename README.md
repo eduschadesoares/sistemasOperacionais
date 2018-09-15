@@ -1,5 +1,5 @@
 <img align="right" width="200" height="200" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg">
-[![license](http://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://raw.githubusercontent.com/malisit/kolpa/master/LICENSE)
+
 # Sistemas Operacionais (3º Ano)
 
 #### Conteúdo 
