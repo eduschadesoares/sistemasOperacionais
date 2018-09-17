@@ -82,4 +82,3 @@ Após:
 # 
 
 ### [4º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/4%C2%BA%20Bimestre)
-
