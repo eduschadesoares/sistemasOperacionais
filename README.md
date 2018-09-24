@@ -68,16 +68,16 @@ Após:
     
     - [**TIPOS DE ARQUIVOS**](https://www.systutorials.com/docs/linux/man/2-getdents/)
     
-      | VALUES  | TYPE |
-      | :---: | :---: | 
-      | DT_BLK | This is a block device. |
-      | DT_CHR | This is a character device. |
-      | DT_DIR | This is a directory. |
-      | DT_FIFO | This is a named pipe (FIFO). |
-      | DT_LNK | This is a symbolic link. |
-      | DT_REG | This is a regular file. |
-      | DT_SOCK | This is a UNIX domain socket. |
-      | DT_UNKNOWN | The file type is unknown. |
+      | VALUES  | TYPE | NUMBER |
+      | :---: | :---: | :---: |
+      | DT_BLK | This is a block device. | 6 |
+      | DT_CHR | This is a character device. | 2 |
+      | DT_DIR | This is a directory. | 4 |
+      | DT_FIFO | This is a named pipe (FIFO). | 1 |
+      | DT_LNK | This is a symbolic link. | 10 |
+      | DT_REG | This is a regular file. | 8 |
+      | DT_SOCK | This is a UNIX domain socket. | 12 |
+      | DT_UNKNOWN | The file type is unknown. | 0 |
     
 # 
 
