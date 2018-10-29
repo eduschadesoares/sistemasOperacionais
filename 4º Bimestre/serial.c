@@ -5,10 +5,31 @@
 #include <termios.h>
 #include <sys/types.h>
 #include <sys/time.h>
+#include <string.h>
+
+#define STR_MAX_SIZE 50
+
+// Comunication Status
+const int AVAILABLE = 0, SENDER = 1, RECIEVER = 2;
+
+// Global Variables
+char command[STR_MAX_SIZE];
+
+// Status
+int status = 0;
+
+int man_maker(){
+  char man_word[STR_MAX_SIZE] = "man ";
+  strcat(man_word, command);
+  strcpy(command, man_word);
+  printf("%s\n", command);
+}
 
 int main(int argc, char **argv) {
   int fd, kbd;
+  int i = 0;
   char letra, *portname;
+  char check_status = 0;
   char msg[80];
   struct termios mytty, kbdios;
   fd_set descritores;     /* Set of i/o handles */
@@ -69,10 +90,56 @@ int main(int argc, char **argv) {
     timeout.tv_usec=0;
     select(FD_SETSIZE, &descritores, NULL, NULL, &timeout);
 
-    while(read(fd, &letra, 1) >= 0)       /* Get a char from serial port "fd"*/
-          write(kbd, &letra, 1);          /* Send it to the console "kbd"*/
-    while(read(kbd, &letra,1) >= 0)       /* Get a char from "kbd" (keyboard)*/
-          write(fd, &letra, 1);           /* send it to the serial port "fd"*/
+    // Custom Stuff
+
+    
+      // Verify first input
+      while(read(fd, &letra, 1) >= 0) {      /* Get a char from serial port "fd"*/
+        if(status == AVAILABLE & letra == RECIEVER) { //change to 2
+          status = letra;
+          printf("Receiver\n");
+        }
+
+      }
+      while(read(kbd, &letra, 1) >= 0) {       /* Get a char from "kbd" (keyboard)*/
+        if(status == AVAILABLE) {
+          status = SENDER;
+          printf("Sender\n");  
+          write(fd, &RECIEVER, 1);                 /* send it to the serial port "fd"*/
+          printf("Insert a command\n");
+        }
+        else {
+          write(kbd, &letra, 1);
+          command[i] = letra;
+          if(command[i] == '\n') {
+            man_maker();
+            // write to serial port
+            int count = 0;
+            while(command[count] != 'n') {
+              write(fd, &command[i], 1);
+            }
+          }
+          i++;
+        }
+      }
+    
+   /* else {
+      if(status == SENDER) {
+        fflush(stdin);
+        printf("Insert a command: ");
+        scanf("%s", command);
+        printf("%s", command);
+      }*/
+  //    while(read(kbd, &letra,1) >= 0) {       /* Get a char from "kbd" (keyboard)*/
+   //     write(fd, &letra, 1);                 /* send it to the serial port "fd"*/
+
+   //   }
+  //    while(read(fd, &letra, 1) >= 0) {      /* Get a char from serial port "fd"*/
+  //      write(kbd, &letra, 1);               /* Send it to the console "kbd"*/
+
+  //    }
+
+
     } while(letra!='X'-64);               /* if the key was Ctrl-X exit*/
   close(fd);
   /* Set console back to normal */
@@ -81,3 +148,6 @@ int main(int argc, char **argv) {
   putchar('\n');
   return 0;
 }
+
+//Command
+//socat -d -d pty,raw,echo=0 pty,raw,echo=0
