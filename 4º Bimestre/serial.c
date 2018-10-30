@@ -97,14 +97,17 @@ int main(int argc, char **argv) {
       while(read(fd, &letra, 1) >= 0) {      /* Get a char from serial port "fd"*/
         if(status == AVAILABLE && letra == RECIEVER) { //change to 2
           status = 2;
-          printf("%c", letra);
           printf("Receiver\n");
         }
         if(status == RECIEVER) {
-          char none;
-          none = getchar();
-        }
+          //Receiver logic
+          command[i] = letra;
+          if(command[i] == '\n') {
+              printf("chegou - %s", command);
+              break;
 
+          }
+        }
       }
       while(read(kbd, &letra, 1) >= 0) {       /* Get a char from "kbd" (keyboard)*/
         if(status == AVAILABLE) {
