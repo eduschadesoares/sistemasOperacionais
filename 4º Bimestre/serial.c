@@ -95,9 +95,14 @@ int main(int argc, char **argv) {
     
       // Verify first input
       while(read(fd, &letra, 1) >= 0) {      /* Get a char from serial port "fd"*/
-        if(status == AVAILABLE & letra == RECIEVER) { //change to 2
-          status = letra;
+        if(status == AVAILABLE && letra == RECIEVER) { //change to 2
+          status = 2;
+          printf("%c", letra);
           printf("Receiver\n");
+        }
+        if(status == RECIEVER) {
+          char none;
+          none = getchar();
         }
 
       }
