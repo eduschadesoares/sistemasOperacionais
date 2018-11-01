@@ -10,23 +10,47 @@
 #define STR_MAX_SIZE 50
 
 // Comunication Status
-const int AVAILABLE = 0, SENDER = 1, RECIEVER = 2;
+const char AVAILABLE = 'a', SENDER = 's', RECIEVER = 'r';
+
+const char man_file[] = "/tmp/man_file";
 
 // Global Variables
 char command[STR_MAX_SIZE];
 
 // Status
-int status = 0;
+char status = 'a';
 
-int man_maker(){
+
+void man_maker(){
   char man_word[STR_MAX_SIZE] = "man ";
+  char end_word[STR_MAX_SIZE] = "\n";
   strcat(man_word, command);
+	strcat(man_word, end_word);
   strcpy(command, man_word);
-  printf("%s\n", command);
+  printf("\n%s\n", command);
+int z=0;
+for(z=0; z<strlen(man_word);z++)
+              {
+                  man_word[z] = 0;
+              }
+
+}
+
+void do_command() {
+    FILE *command_resul, *man_resul;
+    command_resul = popen(command, "r");
+	
+    man_resul = fopen(man_file, "w");
+
+    do fprintf(man_resul, "%c", fgetc(command_resul)); while(!feof(command_resul));
+
+
+    pclose(command_resul);
+    fclose(man_resul);
 }
 
 int main(int argc, char **argv) {
-  int fd, kbd;
+  int fd, kbd, aux, remover;
   int i = 0;
   char letra, *portname;
   char check_status = 0;
@@ -95,59 +119,74 @@ int main(int argc, char **argv) {
     
       // Verify first input
       while(read(fd, &letra, 1) >= 0) {      /* Get a char from serial port "fd"*/
-        if(status == AVAILABLE && letra == RECIEVER) { //change to 2
-          status = 2;
-          printf("Receiver\n");
-        }
-        if(status == RECIEVER) {
-          //Receiver logic
-          command[i] = letra;
-          if(command[i] == '\n') {
-              printf("chegou - %s", command);
-              break;
-
-          }
-        }
+        if(status == AVAILABLE) { //change to 2
+					if(letra == RECIEVER) {
+         	  status = letra;
+	 					letra = ' ';
+          	printf("Receiver\n");
+        	}
+				} else 
+					 if(status == RECIEVER) {
+	           //Receiver logic
+	           command[i] = letra;
+         	   if(command[i] == '\n') {
+               do_command();
+							 aux = open(man_file, O_RDONLY);
+							
+							 while(read(aux, &letra, 1)){
+	//								write(fd, &letra, 1);
+                  printf("%c", letra);
+                  status = AVAILABLE;
+                  remover = remove(man_file);
+                              int g=0;
+              for(g=0; g<strlen(command);g++)
+              {
+                  command[g] = ' ';
+              }
+							 }
+							 close(aux);
+							 i = 0;
+          	}
+				 		i++;
+       	 }
       }
       while(read(kbd, &letra, 1) >= 0) {       /* Get a char from "kbd" (keyboard)*/
         if(status == AVAILABLE) {
-          status = SENDER;
-          printf("Sender\n");  
-          write(fd, &RECIEVER, 1);                 /* send it to the serial port "fd"*/
-          printf("Insert a command\n");
+					if(letra == '\n') {
+		        status = SENDER;
+		        printf("Sender\n");  
+		        write(fd, &RECIEVER, 1);                 /* send it to the serial port "fd"*/
+		        printf("Press enter to send a command\n");
+					}
         }
         else {
-          write(kbd, &letra, 1);
-          command[i] = letra;
-          if(command[i] == '\n') {
+          if(letra == '\n') {
+            //write to serial port
             man_maker();
-            // write to serial port
             int count = 0;
-            while(command[count] != 'n') {
-              write(fd, &command[i], 1);
-            }
-          }
-          i++;
+            while(command[count] != '\n') {
+              write(fd, &command[count], 1);
+							count++;
+            }				
+            write(fd, "\n", 1);
+					  i = 0;
+						status = AVAILABLE;
+
+            int z=0;
+              for(z=0; z<strlen(command);z++)
+              {
+                  command[z] = ' ';
+              }
+
+          } else {
+	          	command[i] = letra;
+		          write(kbd, &letra, 1);
+         	    i++;
+					}
         }
+				fflush(stdin);
       }
     
-   /* else {
-      if(status == SENDER) {
-        fflush(stdin);
-        printf("Insert a command: ");
-        scanf("%s", command);
-        printf("%s", command);
-      }*/
-  //    while(read(kbd, &letra,1) >= 0) {       /* Get a char from "kbd" (keyboard)*/
-   //     write(fd, &letra, 1);                 /* send it to the serial port "fd"*/
-
-   //   }
-  //    while(read(fd, &letra, 1) >= 0) {      /* Get a char from serial port "fd"*/
-  //      write(kbd, &letra, 1);               /* Send it to the console "kbd"*/
-
-  //    }
-
-
     } while(letra!='X'-64);               /* if the key was Ctrl-X exit*/
   close(fd);
   /* Set console back to normal */
