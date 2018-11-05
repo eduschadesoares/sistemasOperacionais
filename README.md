@@ -82,3 +82,4 @@ Após:
 # 
 
 ### [4º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/4%C2%BA%20Bimestre)
+1) [Comunicação Serial](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/serial.c)
