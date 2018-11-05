@@ -83,3 +83,7 @@ Após:
 
 ### [4º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/4%C2%BA%20Bimestre)
 1) Comunicação [Serial](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/serial.c)
+
+    - Criar uma comunicação serial entre duas máquinas através da conexão serial ```DB9```.
+    - Utilização do [programa base](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/io-serial(base).c) que cria a conexão entre as duas máquinas.
+    
