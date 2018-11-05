@@ -9,7 +9,7 @@
 - [x] [1º Bimestre](#1º-bimestre) (Processos)
 - [x] [2º Bimestre](#2º-bimestre) (Memórias)
 - [x] [3º Bimestre](#3º-bimestre) (Arquivos)
-- [ ] [4º Bimestre](#4º-bimestre) (I/O)
+- [x] [4º Bimestre](#4º-bimestre) (I/O)
  
 # 
 
@@ -88,3 +88,5 @@ Após:
     - Utilização do [programa base](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/io-serial(base).c) que cria a conexão entre as duas máquinas com auxílio do [material tutorial](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/serial.pdf).
     - **Enviar** *(máquina 1)* comandandos do terminal do linux de uma máquina para outra *(máquina 2)*. Executar o manual do comando na máquina **receptora** *(máquina 2)* e printar os resultados na tela da máquina que **enviou** *(máquina 1)* os comandos.
     - Páginação dos resultados é opcional
+
+2) Seminário sobre Segurança Digital
