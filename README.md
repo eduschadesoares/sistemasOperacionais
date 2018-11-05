@@ -85,5 +85,6 @@ Após:
 1) Comunicação [Serial](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/serial.c)
 
     - Criar uma comunicação serial entre duas máquinas através da conexão serial ```DB9```.
-    - Utilização do [programa base](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/io-serial(base).c) que cria a conexão entre as duas máquinas.
+    - Utilização do [programa base](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/io-serial(base).c) que cria a conexão entre as duas máquinas com auxílio do [material tutorial](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/serial.pdf).
+    - Enviar comandandos do terminal do linux de uma máquina para outra. Executar o manual do comando na máquina **receptora** e printar os resultados na tela da máquina que **enviou** os comandos.
     
