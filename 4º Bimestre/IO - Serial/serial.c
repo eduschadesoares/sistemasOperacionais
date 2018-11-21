@@ -44,7 +44,6 @@ void do_command() {
 
     do fprintf(man_resul, "%c", fgetc(command_resul)); while(!feof(command_resul));
 
-
     pclose(command_resul);
     fclose(man_resul);
 }
