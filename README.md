@@ -89,4 +89,10 @@ Após:
     - **Enviar** *(máquina 1)* comandandos do terminal do linux de uma máquina para outra *(máquina 2)*. Executar o manual do comando na máquina **receptora** *(máquina 2)* e printar os resultados na tela da máquina que **enviou** *(máquina 1)* os comandos.
     - Páginação dos resultados é opcional
 
-2) Seminário sobre Segurança Digital - [Engenharia Social](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Sistemas%20Operacionais%20-%20Engenharia%20Social.pdf)
+2) Seminário sobre Segurança Digital
+    - [Engenharia Social](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Sistemas%20Operacionais%20-%20Engenharia%20Social.pdf)
+    - Certificação Digital
+    - Backup
+    - Segurança Web
+    - Firewall
+    - Sistemas Anti-Fraude
