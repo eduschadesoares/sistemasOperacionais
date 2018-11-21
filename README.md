@@ -82,11 +82,11 @@ Após:
 # 
 
 ### [4º Bimestre](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/4%C2%BA%20Bimestre)
-1) Comunicação [Serial](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/serial.c)
+1) Comunicação [Serial](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/IO%20-%20Serial/serial.c)
 
     - Criar uma comunicação serial entre duas máquinas através da conexão serial ```DB9```.
-    - Utilização do [programa base](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/io-serial(base).c) que cria a conexão entre as duas máquinas com auxílio do [material tutorial](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/serial.pdf).
+    - Utilização do [programa base](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/IO%20-%20Serial/io-serial(base).c) que cria a conexão entre as duas máquinas com auxílio do [material tutorial](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/IO%20-%20Serial/serial.pdf).
     - **Enviar** *(máquina 1)* comandandos do terminal do linux de uma máquina para outra *(máquina 2)*. Executar o manual do comando na máquina **receptora** *(máquina 2)* e printar os resultados na tela da máquina que **enviou** *(máquina 1)* os comandos.
     - Páginação dos resultados é opcional
 
-2) Seminário sobre Segurança Digital
+2) Seminário sobre Segurança Digital - [Engenharia Social](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Sistemas%20Operacionais%20-%20Engenharia%20Social.pdf)
