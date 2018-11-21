@@ -16,6 +16,7 @@ Curso de [Engenharia de Software](http://www.uepg.br/catalogo/cursos/2016/bachar
 - [x] [2º Bimestre](#2º-bimestre) (Memórias)
 - [x] [3º Bimestre](#3º-bimestre) (Arquivos)
 - [x] [4º Bimestre](#4º-bimestre) (I/O)
+- [x] [Material de Apoio](#material-de-apoio) (I/O)
  
 # 
 
