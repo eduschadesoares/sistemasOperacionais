@@ -196,6 +196,5 @@ int main(int argc, char **argv) {
   return 0;
 }
 
-
 //Command
 //socat -d -d pty,raw,echo=0 pty,raw,echo=0
