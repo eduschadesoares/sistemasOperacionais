@@ -116,7 +116,6 @@ int main(int argc, char **argv) {
 
     // Custom Stuff
 
-    
       // Verify first input
       while(read(fd, &letra, 1) >= 0) {      /* Get a char from serial port "fd"*/
         if(status == AVAILABLE) { //change to 2
