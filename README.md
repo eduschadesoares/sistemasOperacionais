@@ -107,8 +107,8 @@ Após:
 #
 
 ### [Material de Apoio](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/Material%20de%20Apoio)
-1) [Introdução](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/Material%20de%20Apoio/1%20-%20Introdu%C3%A7%C3%A3o.pdf)
-2) [Processos](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/Material%20de%20Apoio/2%20-%20Processos.pdf)
-3) [Memória](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/Material%20de%20Apoio/3%20-%20Mem%C3%B3ria.pdf)
-4) [Arquivos](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/Material%20de%20Apoio/4%20-%20Arquivos.pdf)
-5) [Entrada e Saída](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/Material%20de%20Apoio/5%20-%20Entrada%20e%20Sa%C3%ADda.pdf)
+- [Introdução](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/Material%20de%20Apoio/1%20-%20Introdu%C3%A7%C3%A3o.pdf)
+- [Processos](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/Material%20de%20Apoio/2%20-%20Processos.pdf)
+- [Memória](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/Material%20de%20Apoio/3%20-%20Mem%C3%B3ria.pdf)
+- [Arquivos](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/Material%20de%20Apoio/4%20-%20Arquivos.pdf)
+- [Entrada e Saída](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/Material%20de%20Apoio/5%20-%20Entrada%20e%20Sa%C3%ADda.pdf)
