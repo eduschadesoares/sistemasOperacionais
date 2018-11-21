@@ -89,8 +89,8 @@ Após:
     - **Enviar** *(máquina 1)* comandandos do terminal do linux de uma máquina para outra *(máquina 2)*. Executar o manual do comando na máquina **receptora** *(máquina 2)* e printar os resultados na tela da máquina que **enviou** *(máquina 1)* os comandos.
     - Páginação dos resultados é opcional
 
-2) Seminário sobre Segurança Digital
-    - [Engenharia Social](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Sistemas%20Operacionais%20-%20Engenharia%20Social.pdf)
+2) Seminário sobre [Segurança Digital](https://github.com/eduschadesoares/sistemasOperacionais/tree/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital)
+    - [Engenharia Social](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Engenharia%20Social%20-%20Eduardo%20Soares%20e%20Matheus%20Gomes.pdf)
     - [Backup](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Backup%20-%20Guilherme%20L%C3%BAdio%20e%20Chrystian%20Freitas.pdf)
     - [Certificação Digital](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Certifica%C3%A7%C3%A3o%20Digital%20-%20Lucas%20Kluber%20e%20Silvia%20Lopes.pdf)
     - [Firewall](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Firewall%20-%20Leandro%20Souza%20e%20Matheus%20Krol.pdf)
