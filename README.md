@@ -91,8 +91,8 @@ Após:
 
 2) Seminário sobre Segurança Digital
     - [Engenharia Social](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Sistemas%20Operacionais%20-%20Engenharia%20Social.pdf)
-    - Certificação Digital
-    - Backup
-    - Segurança Web
-    - Firewall
-    - Sistemas Anti-Fraude
+    - [Backup](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Backup%20-%20Guilherme%20L%C3%BAdio%20e%20Chrystian%20Freitas.pdf)
+    - [Certificação Digital](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Certifica%C3%A7%C3%A3o%20Digital%20-%20Lucas%20Kluber%20e%20Silvia%20Lopes.pdf)
+    - [Firewall](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Firewall%20-%20Leandro%20Souza%20e%20Matheus%20Krol.pdf)
+    - [Segurança Web](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Seguran%C3%A7a%20Web%20-%20F%C3%A1bio%20Castro%20e%20Natali%20Lisboa.pdf)
+    - [Sistemas Anti-Fraude](https://github.com/eduschadesoares/sistemasOperacionais/blob/master/4%C2%BA%20Bimestre/Semin%C3%A1rio%20Seguran%C3%A7a%20Digital/Sistemas%20Anti-Fraude%20-%20Gustavo%20Turra%20e%20Mateus%20Loman.pdf)
