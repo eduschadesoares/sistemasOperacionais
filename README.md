@@ -1,4 +1,4 @@
-<img align="right" width="280" height="280" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg">
+<img align="right" width="260" height="260" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg">
 
 # Sistemas Operacionais (3º Ano)
 
